@@ -7,7 +7,7 @@ def main(URL,PATHWAY):
 
 if __name__ == '__main__':
     URL = 'https://volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=2&xnumnuts=2111'
-    PATHWAY = 'C:/Users/User/PycharmProjects/projects/'  '''wtire pathvay to file example:  
+    PATHWAY = 'C:/Users/User/PycharmProjects/projects/'  '''wtire pathvay example:  
                                                             "'C:/Users/User/PycharmProjects/projects/" '''
     main(URL, PATHWAY)
 
