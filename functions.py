@@ -35,7 +35,7 @@ def str_to_int(list_of_lists) -> list:
             new_list.append(new_row)
     return new_list
 
-def inf_URL_to_csv(URL, PATHWAY) -> csv:
+def inf_URL_to_csv(URL) -> csv:
     '''get together results abou election in specific district - url '''
     obce_z_okresu(URL)
     urls = obce_z_okresu(URL)[0]
@@ -76,7 +76,7 @@ def inf_URL_to_csv(URL, PATHWAY) -> csv:
 
     int_rows = str_to_int(rows)
     okres = soup.find(text=lambda text: text and 'Okres:' in text).split('Okres: ')[1].replace('\n', '')
-    file = PATHWAY + okres + '.csv'
+    file = 'Okres ' + okres + '.csv'
     f = open(file, 'w', newline= '')
     f_writer = csv.writer(f)
     f_writer.writerow(header)
